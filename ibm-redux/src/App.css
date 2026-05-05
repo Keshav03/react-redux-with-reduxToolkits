@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+}
+div{
+  margin: 0;
+  padding:0 ;
+}
+
+#backgroundImage{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-image: url("./background.avif");
+}
+
+
+.imageBg{
+  background-size: cover;
+  position: absolute;
+}
+
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-side{
+  position: relative;
+  color:white;
+  text-align: center;
+  width: 30%;
+  height: 30vh;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-side h2{
+  font-size: 1.4rem;  
+  letter-spacing: 4px;
+  font-weight: bold;
+
+}
+.left-side p{
+  font-size: 0.7em;  
+  letter-spacing: 4px;
+
+}
+
+#getStartedBtn{
+  background-color: lightgreen;
+  color:white;
+  padding: 15px 10px;
+  width: 25%;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+}
+#getStartedBtn:hover{
+  background-color: white;
+  color:black;
+}
+
+
+
+.right-side{
+  position: relative;
+  padding: 5% 2%;
+  color:white;
+  text-align: center;
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.right-side p{
+  margin-top: 5%;
+  font-size: 1.1rem;
+}
